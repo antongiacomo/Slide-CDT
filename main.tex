@@ -1,10 +1,18 @@
-\documentclass{beamer}
-
+\documentclass[xcolor={x11names,table}]{beamer}
+\usepackage{graphicx}
 \usepackage{wrapfig}
 
+\usepackage{booktabs}
+
+
+\newcommand{\foo}{\color{LightSteelBlue3}\makebox[0pt]{\textbullet}\hskip-0.5pt\vrule width 1pt\hspace{\labelsep}}
+\newcommand{\tfoo}{\makebox[\dimexpr2\tabcolsep]%
+{\color{LightSteelBlue3}$\boldsymbol \uparrow $}}%
+
+\newcommand{\bfoo}{\raisebox{2.1ex}[0pt]{\makebox[\dimexpr2\tabcolsep]%
+{\color{LightSteelBlue3}$\boldsymbol \downarrow $}}}%
 
 \graphicspath{{images/}}
-
 \usetheme{metropolis}           % Use metropolis theme
 \setbeamertemplate{frame footer}{\insertshortauthor}
 \title{Servizi Ambientali}
