@@ -16,6 +16,7 @@
 \usetheme{metropolis}           % Use metropolis theme
 \setbeamertemplate{frame footer}{\insertshortauthor}
 \title{\vspace*{2.5cm}Green Together}
+%\subtitle{Partecipa}
 \titlegraphic{\includegraphics[width=2cm]{logo_transparent}
 }
 \date{\today}
@@ -23,6 +24,11 @@
 \institute{Università Degli Studi Di Milano}
 \begin{document}
 \maketitle
+
+\begin{frame}{Table of contents}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents
+\end{frame}
 \include{S0_Introduzione}
 \include{S1_Dettagli}
 \include{S2_Extra}
